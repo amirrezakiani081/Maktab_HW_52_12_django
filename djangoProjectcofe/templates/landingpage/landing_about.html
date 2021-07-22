@@ -1,0 +1,41 @@
+{% extends 'landingpage/landing_base.html' %}
+{% load i18n %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% block extra_head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'landing_page/about.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>{% trans 'cofe' %} </title>
+{% endblock %}
+{% block main %}
+<div class="header">
+    <div class="man">
+        <h1>{% trans 'about us . .'%}</h1>
+        <p>
+            {% trans 'A small cup in tehran'%} <br>
+            {% trans 'A cup of black coffee'%}<br>
+            <br>{% trans 'TypeHot or ice-cold (usually hot) Region of origin'%}
+            {% trans 'Horn of Africa[1] and South Arabia[2] Introduced 15th century'%}<br>
+            {% trans 'Color Black, dark brown, light brown, beige'%}<br>
+            {% trans 'Coffee is a brewed drink prepared from roasted coffee beans,'%}<br>
+            {% trans ' the seeds of berries from certain Coffe aspecies.'%}<br>
+            {% trans 'All fruit must be further processed from a raw material—the fruit and seed—into a stable,'%}<br>
+            {% trans 'raw product; un-roasted, green coffee. To process the berries,'%}<br>
+            {% trans ' the seed is separated from the fruit to produce green coffee'%}.<br>
+            <br><br>
+        </p>
+
+        <ul class="sci">
+            <li><a href="#"><img src="{% static 'landing_page/facebook.png' %}"></a></li>
+            <li><a href="#"><img src="{% static 'landing_page/twitter.png' %}"></a></li>
+            <li><a href="#"><img src="{% static 'landing_page/instagram.png' %}"></a></li>
+        </ul>
+    </div>
+</div>
+
+{% endblock %}
+</html>
